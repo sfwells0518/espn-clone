@@ -1,0 +1,2 @@
+class NationalFootballLeague < ApplicationRecord
+end

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  league_abbrev: MyString
+  team: MyString
+  image_url: MyString
+  standings: MyString
+  schedule: MyString
+  scores: 1
+
+two:
+  league_abbrev: MyString
+  team: MyString
+  image_url: MyString
+  standings: MyString
+  schedule: MyString
+  scores: 1
