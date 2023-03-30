@@ -1,0 +1,2 @@
+class MlbController < ApplicationController
+end

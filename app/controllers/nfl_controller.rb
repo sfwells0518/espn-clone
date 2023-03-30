@@ -1,0 +1,2 @@
+class NflController < ApplicationController
+end
