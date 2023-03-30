@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_29_221507) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_30_221429) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -25,6 +25,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_221507) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "mlbs", force: :cascade do |t|
+    t.string "team"
+    t.string "league"
+    t.string "division"
+    t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "national_football_leagues", force: :cascade do |t|
     t.string "league_abbrev"
     t.string "team"
@@ -32,6 +41,33 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_221507) do
     t.string "standings"
     t.string "schedule"
     t.integer "scores"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "nbas", force: :cascade do |t|
+    t.string "team"
+    t.string "conference"
+    t.string "division"
+    t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "nfls", force: :cascade do |t|
+    t.string "team"
+    t.string "conference"
+    t.string "division"
+    t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "nhls", force: :cascade do |t|
+    t.string "team"
+    t.string "conference"
+    t.string "division"
+    t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

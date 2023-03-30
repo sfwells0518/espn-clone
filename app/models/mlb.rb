@@ -1,0 +1,2 @@
+class Mlb < ApplicationRecord
+end

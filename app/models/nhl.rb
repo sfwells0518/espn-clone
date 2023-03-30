@@ -1,0 +1,2 @@
+class Nhl < ApplicationRecord
+end
