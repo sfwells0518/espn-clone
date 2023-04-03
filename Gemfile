@@ -73,3 +73,6 @@ end
 
 #HTTP (The Gem! a.k.a. http.rb) is an easy-to-use client library for making requests from Ruby. https://github.com/httprb/http
 gem "http"
+
+gem "openai"
+
